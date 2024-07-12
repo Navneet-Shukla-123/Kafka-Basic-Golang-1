@@ -19,7 +19,7 @@ const (
 	KafkaTopic         = "notifications"
 )
 
-var ErrUserNotFoundInProducer = errors.New("user not foound")
+var ErrUserNotFoundInProducer = errors.New("user not found")
 
 func findUserByID(id int, users []model.User) (model.User, error) {
 	for _, user := range users {

@@ -34,7 +34,7 @@ func getUserIDFromRequest(ctx *gin.Context) (string, error) {
 	return userID, nil
 }
 
-// ====== NOTIFICATION STORAGE ==========
+// ====== NOTIFICATION STORAGE =========()=
 
 type UserNotifications map[string][]model.Notification
 
@@ -91,7 +91,6 @@ func initializeConsumerGroup() (sarama.ConsumerGroup, error) {
 	if err != nil {
 		return nil, fmt.Errorf("failed to initialize consumer group: %w", err)
 	}
-
 	return consumerGroup, nil
 }
 
